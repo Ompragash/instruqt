@@ -17,7 +17,7 @@ build {
     sources = ["sources.googlecompute.ansible"]
 
     provisioner "ansible" {
-        playbook_file = "./ansible/ansible-setup.yml"
+        playbook_file = "./ansible/ansible-test.yml"
         user = "rhel"
         extra_arguments = [ "-e", "@ansible/extra-vars.yml" ]
     }
